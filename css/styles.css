@@ -61,7 +61,7 @@ nav ul li{
     width: 100%;
     height: 50rem;
     position: relative;
-    background:url(/assets/fondo1.jpg);
+    background:url(../assets/fondo1.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -222,7 +222,7 @@ h4{
 
 .contacto{
     height: 40rem;
-    background-image: url(/assets/photo.jpeg) ;
+    background-image: url(../assets/photo.jpeg) ;
     background-size: cover;
     background-position: 0;
     background-repeat: no-repeat;
