@@ -1,0 +1,626 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #0e0e0e;
+    font-family: 'Gloock', serif;
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+
+
+}
+  
+/*BARRA DE NAV*/
+
+hr{
+    border: 1px solid rgba(0, 0, 0, 0.705);
+}
+
+#check-menu {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+nav{
+    margin-top: -16px;
+    background-color: #000000 ;
+    position: sticky;
+    top: 0;
+}
+
+nav ul li{
+    padding-right: 60px;
+}
+
+.nav-link{
+    padding-left: 30px;
+    color: aquamarine;
+}
+
+.navbar ul li::before{
+    content: "";
+    height: 2px;
+    width: 0px;
+    background: rgb(255, 251, 0);
+    position: absolute;
+    left: ;
+    bottom: ;
+    transition: 0.4s ease-out;
+}
+
+.navbarr ul li:hover::before{
+    width: 120px;
+}
+
+
+/*HEADER INDEX*/
+.index{
+    width: 100%;
+    height: 50rem;
+    position: relative;
+    background:url(../assets/fondo1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 ;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+}
+
+
+
+/*SECTION MAIN INDEX*/
+
+span{
+    color: #1770a3;  color #f3f316 #7c1515
+    text-decoration: underline 2px solid;
+}
+
+.span-sp{
+    color: #1DB954;
+}
+
+.span-ig{
+    color: #E1306C;
+}
+
+
+#redes{
+    font-family: 'Gloock', serif;
+    /*background-color: #1770a3;*/
+    color: #000000;
+}
+
+#redes h3{
+    
+    font-size: 1.7rem;
+    width: 245px;
+    border: 2px solid rgb(0, 0, 0) ;
+    border-radius: 5px;
+    padding: 5px;
+    background: linear-gradient(to bottom ,rgba(255, 255, 0, 0.749),rgba(0, 0, 0, 0)) ;
+}
+
+#redes .contenedor{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 100px;
+}
+
+#redes p{
+    padding-top: 100px;
+    line-height: 50px;
+    font-size: 40px;
+    color: white;
+}
+
+.foto img{
+    width: auto;
+    height: 510px;
+    padding: 60px 0 100px 60px;
+    margin-left: 150px;
+}
+
+
+#redes .texto{
+    width: 50%;
+    
+}
+
+#encontranos{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.texto h3{
+    margin-left: 50px;
+    
+}
+
+#subrayado{
+    text-decoration: none;
+}
+
+
+/*GALERIA*/
+
+.contenedor-galeria{
+    padding: 50px 50px 50px 50px;
+}
+
+
+.fondo-galeria{
+    background: #6a3093;  
+background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  
+background: linear-gradient(to right, #a044ff, #6a3093); 
+
+}
+
+.galeria{
+    /*clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
+    background:url(/assets/asadsf.jpg);*/
+    background-size: cover;
+    height: 350px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+}
+
+h3{
+    font-size: 3.5rem;
+    letter-spacing: 0.25em;
+    word-spacing: 0.25em;;
+    color: rgb(0, 0, 0);
+    
+}
+
+.imagen{
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}
+
+
+.imagen img{
+   width: 100%;
+   border-radius: px;
+    transition: transform 0.3s ease-in-out;
+    border: solid 1px rgb(255, 255, 255);
+
+}
+
+.gallery {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: .5rem;
+    row-gap: .5rem;
+    gap: 20px;
+    grid-auto-flow: dense;
+    margin-top: -70px;
+}
+
+.imagen:hover {
+    
+    transform: scale(1.1);
+}
+
+h4{
+    color: white;
+    margin-left: 500px;
+}
+
+/*CONTACTO*/
+
+.contacto{
+    height: 40rem;
+    background-image: url(../assets/photo.jpeg) ;
+    background-size: cover;
+    background-position: 0;
+    background-repeat: no-repeat;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 23%, 83% 54%, 13% 63%, 0 100%, 0 0);
+    position: relative;
+
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px ;
+    grid-template-rows: repeat(4, 2fr);
+    grid-template-areas: "0 0 1 1"
+    "2 2 2 2"
+    "3 3 3 3"
+    "4 4 4 4";
+    margin: -160px 0 0 37rem;
+   height: 30rem;
+   
+}
+
+.formu{
+    width: 600px;
+}
+
+.fondo-contacto{
+   
+    background: #ff4b1f;  
+background: -webkit-linear-gradient(to right, #ff9068, #ff4b1f); 
+background: linear-gradient(to right, #ff9068, #ff4b1f);
+
+}
+
+.form-floating{
+    padding-top: 40px;
+}
+
+.letra-email{
+    margin-top: 40px;
+}
+
+.letra-comentarios{
+    margin-top: 40px;
+}
+
+form{
+    width: 500px;
+}
+
+.btn{
+    margin: 40px 0 0 250px;
+    background-color: #ffff00d0 ;
+    color: black;
+    border: 1px solid black;
+}
+
+h7{
+    display: flex;
+    font-size: 3rem;
+    margin-left: 42rem;
+    margin-top:100px;
+    color: #ffffff;
+    letter-spacing: 0.5em;
+  word-spacing: 0.5em;
+}
+
+
+/*FOOTER*/
+
+#footer-contact{
+    margin-top: 300px;
+}
+
+.bg-gradient
+
+footer{
+    font-family: 'Bungee Inline', cursive;
+    background: #000000f3; /*#7c1515- #000000f3*/
+    height: auto;
+    width: 100%;
+    font-family: ;
+    padding-top: 40px;
+    color: whitesmoke;
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+   /* background: rgb(255, 255, 255) linear-gradient(#1770a3, rgb(140, 196, 248))*/ ;
+}
+
+.footer-container h5{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1rem;
+    padding-top: 50px;
+}
+
+.footer-container p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.list a:hover i{
+    color: yellow;
+}
+
+.footer-bottom{
+    background: rgba(0, 0, 0, 0.021);
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    padding-bottom: 5px;
+    
+}
+.footer-bottom p{
+    font-size: 10px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+    color: #333;
+}
+
+/*FOOTER REDES*/
+
+
+.redes-container ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 70px 0px ;
+    
+}
+
+.redes-container ul li a{
+    display: block;
+    padding: 0 10px;
+    background-color: #ffe6e6;
+    color: rgb(41, 33, 33);
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgb(212, 184, 184);
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.redes-container ul:hover a{
+    filter: blur(2px);
+}
+
+.redes-container ul:hover a:hover{
+    transform: translateY(-1px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(12, 11, 11, 0.4);
+    filter: none;
+}
+
+.redes-container ul li .youtube:hover{
+    background: #FF0000;
+}
+
+.redes-container ul li .youtube{
+    color: #FF0000;
+}
+
+.redes-container ul li .instagram:hover{
+    background: #E1306C;
+}
+
+.redes-container ul li .instagram{
+    color: #E1306C;
+}
+
+.redes-container ul li .gmail:hover{
+    background: #00B2FF;
+}
+
+.redes-container ul li .gmail{
+    color: #00B2FF;
+}
+
+.redes-container ul li .spotify:hover{
+    background: #1DB954;
+}
+
+.redes-container ul li .spotify{
+    color: #1DB954;
+}
+
+.redes-container ul li .whatsapp:hover{
+    background: #25D366;
+}
+
+.redes-container ul li .whatsapp{
+    color: #25D366;
+}
+
+.redes-cont{
+    display: flex;
+    margin-left: -960px;
+    margin-top: 300px;
+}
+
+
+/*MEDIA*/
+
+@media screen and (min-width:360px) and (max-width:767px) {
+
+    /*NAV @MEDIA*/
+
+    .navbarr ul {
+        display: none ;
+        position: absolute;
+        height: 100vh;
+        top: 50px;
+        width: 100%;
+        height: 150px;
+        flex-direction: column;
+        background-color: #020202;
+        justify-content: space-around;
+    }
+
+   #encontranos{
+    font-size: x-large;
+   }
+   
+    label.menu{
+        display: block;
+        font-size: 2rem;
+        color: #ffffff;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+
+    #check-menu:checked ~ul {
+        display: block;
+    }
+
+    #redes h3{
+        font-size: 1rem;
+        width: 200px;
+    }
+
+
+  
+   .foto{
+    display: none;
+   }
+
+   /*GALERIA @MEDIA*/
+
+   .gallery{
+    grid-template-columns: repeat(1,1fr);
+}
+
+   /*CONTACTO @MEDIA*/
+
+   .fondo-contacto{
+    width: 100%;
+   }
+
+   .contacto{
+    width: 100%;
+    height: auto;
+    font-size: small;
+}
+
+    .formulario{
+        width: 100%;
+        display: flex;
+    margin-top: 80px;
+    margin-left: 50px;
+    }
+
+   .form-floating{
+   justify-items: center;
+   justify-content: center;
+   width: 330px;
+   margin-left: 10px;
+   }
+
+   h7{
+   margin-left: 70px;
+   }
+
+   .row{
+   width: 350px;
+   margin-left: 1px;
+   }
+
+   .btn{
+    margin-left: 150px;
+}
+
+.redes-cont{
+    display: none;
+}
+
+   }
+
+   @media (min-width:768px) and (max-width:1000px) {
+      /*NAV @MEDIA*/
+
+      .navbarr ul {
+        display: none ;
+        position: absolute;
+        height: 100vh;
+        top: 50px;
+        width: 100%;
+        height: 150px;
+        flex-direction: column;
+        background-color: #020202;
+        justify-content: space-around;
+    }
+
+   #encontranos{
+    font-size: x-large;
+   }
+   
+    label.menu{
+        display: block;
+        font-size: 2rem;
+        color: #ffffff;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+
+    #check-menu:checked ~ul {
+        display: block;
+    }
+
+    #redes h3{
+        font-size: 1rem;
+        width: 200px;
+    }
+    
+    .gallery{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+/*CONTACTO @MEDIA*/
+
+.fondo-contacto{
+    width: 100%;
+   }
+
+   .contacto{
+    width: 100%;
+    height: auto;
+    font-size: small;
+}
+
+    .formulario{
+        width: 100%;
+        display: flex;
+    margin-top: 80px;
+    margin-left: 150px;
+    }
+
+   .form-floating{
+   justify-items: center;
+   justify-content: center;
+   width: 400px;
+   margin-left: 60px;
+   }
+
+   h7{
+   margin-left: 70px;
+   }
+
+   .row{
+   width: 420px;
+   margin-left: 50px;
+   }
+
+   .btn{
+    margin-left: 220px;
+} 
+
+.redes-cont{
+    display: none;
+}
+   }
+
+@media (max-width:967px){
+    .foto {
+        display: none;
+    }
+}
+
