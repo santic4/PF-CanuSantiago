@@ -1,0 +1,317 @@
+/*MEDIA*/
+
+@media screen and (min-width:350px) and (max-width:900px) {
+    
+    nav{
+        ul {
+            display: none ;
+            
+        }
+
+        
+            .menu{
+                display: block;
+                font-size: 3rem;
+                color: #ffffff;
+                cursor: pointer;
+                float: right;
+                padding: 12px 10px 0 0; 
+                
+                
+            }
+        
+
+        #check-menu:checked ~ul {
+            display: block;
+            
+            background: black;
+            padding-top: 60px;
+            gap: 20px;
+            width: 200px;
+            li{
+                display: block;
+                height: 56px;
+                
+            }
+            
+            
+        }
+    }
+    
+
+   .main-media-index{
+    #redes{
+        h3{
+            font-size: 1rem;
+            width: 2px;
+            
+
+            #encontranos{
+                font-size: x-large;
+                margin-left: 12px;
+               }
+               
+        }
+        .contenedor-index{
+            margin-left: -20px;
+            .foto{
+                display: none;
+               }
+               
+        }
+    } 
+   }
+
+      /*GALERIA @MEDIA*/
+
+      .galeria{
+        .titulo{
+            h3{
+                margin-left: 250px;
+    
+            }
+
+        }
+       
+      }
+
+      .contenedor-galeria {
+        .gallery{
+            display: grid;
+            column-gap: .5rem;
+            row-gap: .5rem;
+            gap: 20px;
+            grid-auto-flow: dense;
+            margin-top: -70px;
+            grid-template-columns: repeat(1,1fr);
+        }
+
+      } 
+
+      
+
+      /*NOTICIAS*/
+
+      .header-noti{
+        h2{
+            width: 100px;
+            margin-left: 150px;
+        }
+      }
+
+      .contenedor{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        
+      }
+
+    /*CONTACTO @MEDIA*/
+    
+
+        .contacto{
+            width: 100%;
+            height: auto;
+            font-size: small;
+
+            h7{
+                margin-left: 70px;
+                }
+        }
+
+        .formulario{
+            width: 100%;
+            display: flex;
+        margin-top: 80px;
+        margin-left: 50px;
+
+        .row{
+            width: 350px;
+            margin-left: 1px;
+            }
+
+        .form-floating{
+            justify-items: center;
+            justify-content: center;
+            width: 330px;
+            margin-left: 10px;
+            }
+
+            .btn{
+                margin-left: 150px;
+            }
+
+            .redes-cont{
+                display: none;
+            }
+        }
+       } 
+
+
+@media (min-width:768px) and (max-width:1000px) {
+    /*NAV @MEDIA*/
+    .nav{
+        ul {
+            display: none ;
+         
+        }
+
+        label{
+            .menu{
+                display: block;
+                font-size: 2rem;
+                color: #ffffff;
+                cursor: pointer;
+                margin-left: 5px;
+            }
+        }
+
+        input{
+            #check-menu:checked ~ul {
+                display: block;
+            }
+        }
+    }
+
+    #redes{
+        h3{
+            font-size: 1rem;
+            width: 2px;
+
+            #encontranos{
+                font-size: x-large;
+                margin-left: 12px;
+               }
+        }
+    } 
+
+    /*GALERIA QUERIES*/
+    .contenedor-galeria {
+        .gallery{
+            display: grid;
+            column-gap: .5rem;
+            row-gap: .5rem;
+            gap: 20px;
+            grid-auto-flow: dense;
+            margin-top: -70px;
+            grid-template-columns: repeat(2,1fr);
+        }
+
+      } 
+
+      .header-noti{
+        h2{
+            width: 100px;
+            margin-left: 200px;
+        }
+      }
+
+    /*CONTACTO @MEDIA*/
+    
+
+        .contacto{
+            width: 100%;
+            height: auto;
+            font-size: small;
+
+            h7{
+                margin-left: 70px;
+                }
+        }
+
+        .formulario{
+            width: 500px;
+            display: flex;
+        margin-top: 80px;
+        margin-left: 150px;
+               form{
+                
+                .form-floating{
+                    justify-items: center;
+                    justify-content: center;
+                    width: 400px;
+                    margin-left: 60px;
+                    }
+                    .row{
+                        width: 420px;
+                        margin-left: 50px;
+                        }
+                        .btn{
+                            margin-left: 220px;
+                        } 
+
+               }
+        }
+                .redes-cont{
+                    display: none;
+                }
+        
+        } 
+       
+
+
+@media (max-width:967px){
+    .foto {
+        display: none;
+    }
+    .main-media-index{
+        #redes{
+            .contenedor-index{
+                width: 100%;
+                margin-left: -12px;
+                .texto{
+                    margin-left: 150px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1000px) and (max-width:1330px) {
+   .contacto{
+    h7{
+        margin-left: 350px;
+    }
+   }
+    .formu{
+    margin-left: -300px;
+   }
+    .redes-cont{
+    width: 100%;
+
+   }
+   .header-noti{
+    h2{
+        margin-left: 250px;
+    }
+  }
+}
+
+@media (min-width:900px){
+    .main-media-index{
+        #redes{
+            .contenedor-index{
+                width: 100%;
+                margin-left: -12px;
+                .texto{
+                    margin-left: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:767px){
+    .formulario{
+        width: 400px;
+        a{
+            .btn{
+                margin-left: 120px;
+            }
+
+        }
+        
+    }
+}
