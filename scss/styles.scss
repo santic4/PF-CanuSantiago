@@ -12,11 +12,10 @@ background: linear-gradient(to bottom, #131313, #0f1336);
     font-family: 'Gloock', serif;
     
 font-family: 'Raleway', sans-serif;
-
+@import "partials/mixin";
 @import "partials/variables";
 nav{
-    height: 80px;
-    width: 100%;
+    @include sizes(100%, 80px);
     background:$fondo;
     #check-menu {
         display: none;
@@ -71,14 +70,10 @@ nav{
 
 /*HEADER INDEX*/
 .index{
-    width: 100%;
-    height: 48rem;
+    @include sizes(100%, 48rem);
     position: relative;
-    background:url(/assets/fondo1.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 ;
+    background:url(../assets/fondo1.jpg);
+    @include imgposition();
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
    
     
@@ -91,14 +86,12 @@ nav{
 
     .contenedor-index{
         width: -20px;
-        display: flex;
-        align-items: center;
+        @include flex-center();
         padding: 10px;
         margin-left: 100px;
 
         .foto img{
-            width: auto;
-            height: 510px;
+            @include sizes (auto, 510px);
             padding: 60px 0 100px 60px;
             margin-left: 150px;
         }
@@ -160,9 +153,7 @@ nav{
 
     .titulo {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center();
         background-color: black;
         height: 15rem;
 
@@ -219,21 +210,21 @@ nav{
 
 .header-noti{
     background: url(../assets/header-noti.jpg);
-    height: 30rem;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include sizes (100%, 20rem);
+    @include imgposition();
     h2{
         width: 700px;
         font-size: $inter;
             word-spacing: 0.25em;;
             color: rgb(0, 0, 0);
             margin-left: 550px;
-            margin-top: 150px;
+            margin-top: 100px;
     }
 }
 
 .header-info{
     background-color: black;
+    @include imgposition();
     height: 20rem;
     h4{
         width: 700px;
@@ -248,11 +239,9 @@ nav{
 
 
 .contacto{
-    height: 40rem;
+    @include sizes (100%, 40rem);
     background-image: url(../assets/photo.jpeg) ;
-    background-size: cover;
-    background-position: 0;
-    background-repeat: no-repeat;
+    @include imgposition();
     clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 23%, 83% 54%, 13% 63%, 0 100%, 0 0);
     position: relative;
 
@@ -271,11 +260,8 @@ nav{
 .footer-container{
     font-family: 'Gotu', sans-serif;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center();
     flex-direction: column;
-    text-align: center;
     background: rgb(0, 0, 0);
     background: linear-gradient(to top, #000000, #8e0e0000); 
     color: rgba(245, 245, 220, 0.515);
