@@ -82,7 +82,7 @@ body #redes .contenedor-index {
 }
 body #redes .contenedor-index .foto img {
   width: auto;
-  height: 510px;
+  height: 480px;
   padding: 60px 0 100px 60px;
   margin-left: 150px;
 }
@@ -135,7 +135,6 @@ body .galeria .titulo h3 {
   font-size: 3.5rem;
   word-spacing: 0.25em;
   color: rgb(255, 255, 255);
-  margin-left: 450px;
 }
 body .contenedor-galeria {
   padding: 130px 50px 50px 50px;
@@ -343,7 +342,7 @@ body .redes-cont {
   margin-left: -960px;
   margin-top: 300px;
 }
-@media screen and (min-width: 350px) and (max-width: 900px) {
+@media screen and (min-width: 310px) and (max-width: 900px) {
   body {
     /*GALERIA @MEDIA*/
     /*NOTICIAS*/
@@ -358,18 +357,24 @@ body .redes-cont {
     color: #ffffff;
     cursor: pointer;
     float: right;
-    padding: 12px 10px 0 0;
+    padding: 12px 10px 0 5px;
   }
   body nav #check-menu:checked ~ ul {
     display: block;
-    background: black;
-    padding-top: 60px;
-    gap: 20px;
-    width: 200px;
+    background: rgb(23, 116, 133);
+    margin-top: 0px;
+    margin-right: -10px;
+    width: 150px;
+    padding-bottom: 10px;
   }
   body nav #check-menu:checked ~ ul li {
     display: block;
-    height: 56px;
+    align-items: flex-start;
+    height: 60px;
+    margin-left: -20px;
+  }
+  body nav #check-menu:checked ~ ul .btn-contacto {
+    background-color: rgba(255, 162, 0, 0);
   }
   body .main-media-index #redes h3 {
     font-size: 1rem;
@@ -385,8 +390,8 @@ body .redes-cont {
   body .main-media-index #redes .contenedor-index .foto {
     display: none;
   }
-  body .galeria .titulo h3 {
-    margin-left: 250px;
+  body .galeria {
+    display: none;
   }
   body .contenedor-galeria .gallery {
     display: grid;
@@ -399,7 +404,7 @@ body .redes-cont {
   }
   body .header-noti h2 {
     width: 100px;
-    margin-left: 150px;
+    margin-left: 200px;
   }
   body .contenedor {
     width: 100%;
@@ -412,9 +417,10 @@ body .redes-cont {
     width: 100%;
     height: auto;
     font-size: small;
+    clip-path: none;
   }
   body .contacto h7 {
-    margin-left: 70px;
+    margin-left: -1000px;
   }
   body .formulario {
     width: 100%;
@@ -476,7 +482,7 @@ body .redes-cont {
     grid-template-columns: repeat(2, 1fr);
   }
   body .header-noti h2 {
-    width: 100px;
+    width: 570px;
     margin-left: 200px;
   }
   body .contacto {
@@ -545,12 +551,37 @@ body .redes-cont {
     margin-left: 50px;
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
   body .formulario {
+    margin-left: 130px;
     width: 400px;
   }
   body .formulario a .btn {
     margin-left: 120px;
+  }
+  body .formulario .formu {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 310px) and (max-width: 500px) {
+  body nav .logo {
+    font-size: 25px;
+    margin-left: -50px;
+  }
+  body .main-media-index {
+    margin-left: -150px;
+  }
+  body .header-noti h2 {
+    display: none;
+  }
+  body .formulario {
+    margin-left: -5px;
+  }
+  body .formulario a .btn {
+    margin-left: 120px;
+  }
+  body .formulario .formu {
+    width: 150px;
   }
 }
 

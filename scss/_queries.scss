@@ -1,39 +1,35 @@
 /*MEDIA*/
 
-@media screen and (min-width:350px) and (max-width:900px) {
-    
-    nav{
+@media screen and (min-width:310px) and (max-width:900px) {
+   nav{
         ul {
             display: none ;
-            
         }
-
-        
             .menu{
                 display: block;
                 font-size: 3rem;
                 color: #ffffff;
                 cursor: pointer;
                 float: right;
-                padding: 12px 10px 0 0; 
-                
-                
+                padding: 12px 10px 0 5px; 
             }
-        
-
         #check-menu:checked ~ul {
             display: block;
+            background: rgb(23, 116, 133);
+            margin-top: 0px;
+            margin-right: -10px;
+            width: 150px;
+            padding-bottom: 10px;
             
-            background: black;
-            padding-top: 60px;
-            gap: 20px;
-            width: 200px;
             li{
                 display: block;
-                height: 56px;
-                
+                align-items: flex-start;
+                height: 60px;
+                margin-left: -20px;
             }
-            
+            .btn-contacto{
+                background-color: #ffa20000 ;
+            }
             
         }
     }
@@ -65,14 +61,7 @@
       /*GALERIA @MEDIA*/
 
       .galeria{
-        .titulo{
-            h3{
-                margin-left: 250px;
-    
-            }
-
-        }
-       
+        display: none;
       }
 
       .contenedor-galeria {
@@ -95,7 +84,7 @@
       .header-noti{
         h2{
             width: 100px;
-            margin-left: 150px;
+            margin-left: 200px;
         }
       }
 
@@ -109,15 +98,14 @@
       }
 
     /*CONTACTO @MEDIA*/
-    
-
-        .contacto{
+  .contacto{
             width: 100%;
             height: auto;
             font-size: small;
+            clip-path: none;
 
             h7{
-                margin-left: 70px;
+                margin-left: -1000px;
                 }
         }
 
@@ -203,7 +191,7 @@
 
       .header-noti{
         h2{
-            width: 100px;
+            width: 570px;
             margin-left: 200px;
         }
       }
@@ -303,14 +291,52 @@
     }
 }
 
-@media (max-width:767px){
+@media (min-width: 480px) and (max-width:767px){
     .formulario{
+        margin-left: 130px;
         width: 400px;
         a{
             .btn{
                 margin-left: 120px;
             }
 
+        }
+        .formu{
+            width: 200px;
+        }
+        
+    }
+}
+
+@media screen and (min-width:310px) and (max-width:500px){
+   nav{
+    .logo{
+        font-size: 25px;
+        margin-left: -50px;
+       }
+
+   }
+
+   .main-media-index{
+    margin-left: -150px;
+   }
+    .header-noti{
+        h2{
+            display: none;
+        }
+      }
+     
+      .formulario{
+        margin-left: -5px;
+        
+        a{
+            .btn{
+                margin-left: 120px;
+            }
+
+        }
+        .formu{
+            width: 150px;
         }
         
     }
