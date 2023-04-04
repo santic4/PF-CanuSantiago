@@ -34,7 +34,7 @@ nav{
             line-height: 80px;
             
         }
-    
+  
     ul{
         float: right;
         margin-right: 40px;
@@ -72,7 +72,7 @@ nav{
 .index{
     @include sizes(100%, 48rem);
     position: relative;
-    background:url(../assets/fondo1.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.825),rgba(255, 255, 255, 0)) ,url(../assets/fondo1.jpg) ;
     @include imgposition();
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
    
@@ -110,12 +110,14 @@ nav{
         border: 2px solid rgb(0, 0, 0) ;
         border-radius: 5px;
         padding: 5px;
-        background: linear-gradient(to bottom ,rgb(255, 255, 0),rgba(0, 0, 0, 0)) ;
+        background: linear-gradient(to bottom ,#ffa2005b,rgb(81, 24, 77)) ;
+       
 
         #encontranos{
             text-decoration: none;
             color: $verde-agua;
             margin-left: 10px;
+            font-weight: 400;
         }
         
     }
@@ -142,25 +144,22 @@ nav{
 
 /*GALERIA*/
     .galeria{
-   
-    background-color: rgb(0, 0, 0);
-    height: 15rem;
+    background-color: rgba(0, 0, 0, 0);
+    height: 10rem;
     
 
     .titulo {
         width: 100%;
         @include flex-center();
-        background-color: black;
-        height: 15rem;
-
+        background-color: rgba(0, 0, 0, 0);
+        height: 10rem;
+        
         h3{
             width: 700px;
             font-size: $inter;
             word-spacing: 0.25em;;
             color: rgb(255, 255, 255);
-            
-            
-            
+         
         }
 
     }
@@ -206,8 +205,9 @@ nav{
 
 .header-noti{
     background: url(../assets/header-noti.jpg);
-    @include sizes (100%, 20rem);
+    @include sizes (100%, 18rem);
     @include imgposition();
+    
     h2{
         width: 700px;
         font-size: $inter;
@@ -240,6 +240,7 @@ nav{
     @include imgposition();
     clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 23%, 83% 54%, 13% 63%, 0 100%, 0 0);
     position: relative;
+    
 
     h7{
         display: flex;
@@ -249,41 +250,27 @@ nav{
         color: #ffffff;
         letter-spacing: 0.5em;
       word-spacing: 0.5em;
+      
     }
 }
 
 
 .footer-container{
-    font-family: 'Gotu', sans-serif;
+    font-family: none;
     width: 100%;
+    height: auto;
+   padding-top: 20px;
     @include flex-center();
     flex-direction: column;
     background: rgb(0, 0, 0);
-    background: linear-gradient(to top, #000000, #8e0e0000); 
-    color: rgba(245, 245, 220, 0.515);
-   
-    
-    
+    background: black; 
+    color: rgb(245, 245, 220);
 
-   h5{
-    font-size: 1rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 1rem;
-    padding-top: 50px;
-}
 }
 
 .formulario{
-    display: grid;
-    grid-template-columns: 400px 400px 400px 400px ;
-    grid-template-rows: repeat(4, 2fr);
-    grid-template-areas: "0 0 1 1"
-    "2 2 2 2"
-    "3 3 3 3"
-    "4 4 4 4";
     margin: -160px 0 0 37rem;
-   height: 30rem;
+   height: auto;
 
    form{
     width: 600px;
@@ -298,19 +285,16 @@ nav{
 
     .formu{
         width: 600px;
-        
-
-      
 
         .form-floating{
-            padding-top: 40px;
+            padding-top: 100px;
 
             .letra-email{
-                margin-top: 40px;
+                margin-top: 100px;
             }
             
             .letra-comentarios{
-                margin-top: 40px;
+                margin-top: 100px;
             }
         }
 
@@ -327,13 +311,46 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 50px;
+    padding: 100px;
     
 
     .card{
         border: 1px solid black;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
         filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+        .card-body{
+            margin-top: -50px;
+            .text-h{
+                font-size: 1.8rem;
+                padding-bottom: 40px;
+                text-transform:uppercase;
+            }
+          
+            .card-text{
+                font-size: 3rem;
+                text-transform:uppercase;
+                
+            }
+            h6{
+                height: auto;
+                width: auto;
+                font-size: 2rem;
+                transform: translateY(-850%);
+                margin-left: 100px;
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                
+             }
+             
+             
+             button{
+                background-color: #00B2FF;
+                padding: 8px;
+                margin-left: 30px;
+                border-radius: 5px;
+                color: white;
+                  }
+        }
     }
 }
 
@@ -421,9 +438,9 @@ nav{
 } 
 
 .redes-cont{
-    display: flex;
-    margin-left: -960px;
-    margin-top: 300px;
+    margin-left: -500px;
+    margin-top: 60px;
+    padding-bottom: 50px
     
 }
 

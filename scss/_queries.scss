@@ -210,10 +210,12 @@
         }
 
         .formulario{
+            
             width: 500px;
             display: flex;
         margin-top: 80px;
         margin-left: 150px;
+        
                form{
                 
                 .form-floating{
@@ -255,6 +257,9 @@
             }
         }
     }
+    .formulario{
+        padding-bottom: 60px;
+    }
 }
 
 @media screen and (min-width:1000px) and (max-width:1330px) {
@@ -265,6 +270,7 @@
    }
     .formu{
     margin-left: -300px;
+    
    }
     .redes-cont{
     width: 100%;
@@ -275,6 +281,7 @@
         margin-left: 250px;
     }
   }
+ 
 }
 
 @media (min-width:900px){
@@ -295,6 +302,7 @@
     .formulario{
         margin-left: 130px;
         width: 400px;
+        
         a{
             .btn{
                 margin-left: 120px;
