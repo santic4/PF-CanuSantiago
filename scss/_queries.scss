@@ -12,6 +12,7 @@
                 cursor: pointer;
                 float: right;
                 padding: 12px 10px 0 5px; 
+                
             }
         #check-menu:checked ~ul {
             display: block;
@@ -20,6 +21,7 @@
             margin-right: -10px;
             width: 150px;
             padding-bottom: 10px;
+            
             
             li{
                 display: block;
@@ -83,8 +85,7 @@
 
       .header-noti{
         h2{
-            width: 100px;
-            margin-left: 200px;
+            display: none;
         }
       }
 
@@ -317,13 +318,19 @@
 }
 
 @media screen and (min-width:310px) and (max-width:500px){
-   nav{
-    .logo{
-        font-size: 25px;
-        margin-left: -50px;
+  .index{
+    nav{
+        .logo{
+            font-size: 25px;
+            
+           }
+    
        }
+    .tarjeta{
+        display: none;
+    }
+  } 
 
-   }
 
    .main-media-index{
     margin-left: -150px;

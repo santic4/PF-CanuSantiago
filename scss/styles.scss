@@ -19,6 +19,7 @@ nav{
     background:$fondo;
     #check-menu {
         display: none;
+        
         }
         
             .menu{
@@ -26,19 +27,18 @@ nav{
     }
     
         .logo{
-            font-family: 'Mystery Quest', cursive;
-            font-size: 35px;
-            font-weight: bold;
-            color: $verde-agua;
-            padding: 0 100px;
-            line-height: 80px;
-            
+            img{
+                padding: 15px 0 0 50px;
+                height: 50px;
+                width: auto;
+            }
+                 
         }
-  
+
     ul{
         float: right;
         margin-right: 40px;
-        margin-top: -80px;
+        margin-top: -70px;
         
         li{
             display: inline-block;
@@ -80,9 +80,9 @@ nav{
     .tarjeta{
         width: 200px;
         height: 400px;
-        margin: 70px 0 0 70px;
+        margin: 70px 0 0 100px;
         border-radius: 5px;
-        background: url(/assets/galeria14.jpg);
+        background: url(/assets/tarjeta.jpeg);
         background-size: cover;
         box-shadow: 3px 5px 5px rgba(3, 26, 51, 0.9);
         opacity: 0.9;
@@ -181,6 +181,22 @@ nav{
 }
 
 /*GALERIA*/
+.arr{
+            
+    ul{
+        padding-top: 5px;
+     }
+    .logo{
+        
+        img{
+            padding: 15px 0 0 50px;
+            height: 65px;
+            width: auto;
+        }
+             
+    }
+
+}
     .galeria{
     background-color: rgba(0, 0, 0, 0);
     height: 10rem;
@@ -203,7 +219,6 @@ nav{
     }
     
 }
-
 
 
 .contenedor-galeria{
@@ -241,20 +256,38 @@ nav{
     }
 }
 
-.header-noti{
-    background: url(../assets/header-noti.jpg);
-    @include sizes (100%, 18rem);
-    @include imgposition();
+    .header-noti{
+
+        nav{
+            
+            ul{
+                padding-top: 5px;
+             }
+            .logo{
+                
+                img{
+                    padding: 15px 0 0 50px;
+                    height: 65px;
+                    width: auto;
+                }
+                     
+            }
+
+        }
     
-    h2{
-        width: 700px;
-        font-size: $inter;
-            word-spacing: 0.25em;;
-            color: rgb(0, 0, 0);
-            margin-left: 550px;
-            margin-top: 100px;
+        @include sizes (100%, 0rem);
+        @include imgposition();
+        
+        h2{
+            width: 700px;
+            font-size: $inter;
+                word-spacing: 0.25em;;
+                color: white;
+                margin-left: 550px;
+                margin-top: 50px;
+        }
     }
-}
+    
 
 .header-info{
     background-color: black;
@@ -278,6 +311,22 @@ nav{
     @include imgposition();
     clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 23%, 83% 54%, 13% 63%, 0 100%, 0 0);
     position: relative;
+    nav{
+            
+        ul{
+            padding-top: 5px;
+         }
+        .logo{
+            
+            img{
+                padding: 15px 0 0 50px;
+                height: 65px;
+                width: auto;
+            }
+                 
+        }
+
+    }
     
 
     h7{
@@ -350,9 +399,15 @@ nav{
     justify-content: space-around;
     align-items: center;
     padding: 100px;
+    background: url(/assets/fondo-noti.jpeg);
+    @include imgposition();
+    padding-top: 200px;
+    
+    
     
 
     .card{
+       
         border: 1px solid black;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
         filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
