@@ -293,6 +293,22 @@ nav{
     background-color: black;
     @include imgposition();
     height: 20rem;
+    nav{
+            
+        ul{
+            padding-top: 5px;
+         }
+        .logo{
+            
+            img{
+                padding: 15px 0 0 50px;
+                height: 65px;
+                width: auto;
+            }
+                 
+        }
+
+    }
     h4{
         width: 700px;
         font-size: $inter;

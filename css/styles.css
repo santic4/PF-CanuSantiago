@@ -234,6 +234,14 @@ body .header-info {
   background-position: 0;
   height: 20rem;
 }
+body .header-info nav ul {
+  padding-top: 5px;
+}
+body .header-info nav .logo img {
+  padding: 15px 0 0 50px;
+  height: 65px;
+  width: auto;
+}
 body .header-info h4 {
   width: 700px;
   font-size: 3.5rem;
