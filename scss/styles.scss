@@ -82,7 +82,7 @@ nav{
         height: 400px;
         margin: 70px 0 0 100px;
         border-radius: 5px;
-        background: url(/assets/tarjeta.jpeg);
+        background: url(../assets/tarjeta.jpeg);
         background-size: cover;
         box-shadow: 3px 5px 5px rgba(3, 26, 51, 0.9);
         opacity: 0.9;
@@ -399,7 +399,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     padding: 100px;
-    background: url(/assets/fondo-noti.jpeg);
+    background: url(../assets/fondo-noti.jpeg);
     @include imgposition();
     padding-top: 200px;
     
