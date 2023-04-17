@@ -73,7 +73,7 @@ nav{
 .index{
     @include sizes(100%, 48rem);
     position: relative;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.894),rgba(255, 255, 255, 0)) ,url(../assets/fondo1.jpg) ;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.94),rgba(255, 255, 255, 0)) ,url(../assets/fondo1.jpg) ;
     @include imgposition();
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
     
@@ -116,6 +116,9 @@ nav{
             
         }
     }
+}
+.footer-bottom{
+    margin-top: -12px;
 }
 
 #redes{
@@ -224,7 +227,7 @@ nav{
 
 .contenedor-galeria{
     background-color: black;
-    padding: 130px 50px 50px 50px;
+    padding: 130px 50px 100px 50px;
 
     .gallery {
         margin: auto;
@@ -258,7 +261,7 @@ nav{
 }
 
     .header-noti{
-
+        
         nav{
             
             ul{
@@ -369,8 +372,8 @@ nav{
    margin-top: -17px;
     @include flex-center();
     flex-direction: column;
-    background: rgb(0, 0, 0);
-    background: black; 
+    background: #1d1d1d;
+    background: #1d1d1d; 
     color: rgb(245, 245, 220);
     
 
@@ -414,6 +417,7 @@ nav{
 }
 }
 
+
 /*NOTICIAS*/
 .contenedor{
     width: 100%;
@@ -425,7 +429,6 @@ nav{
     background: url(../assets/fondo-noti.jpeg);
     @include imgposition();
     padding-top: 250px;
-    
     
     .card{
         border: 1px solid black;

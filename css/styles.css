@@ -57,7 +57,7 @@ body .index {
   width: 100%;
   height: 48rem;
   position: relative;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.894), rgba(255, 255, 255, 0)), url(../assets/fondo1.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.94), rgba(255, 255, 255, 0)), url(../assets/fondo1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0;
@@ -96,6 +96,9 @@ body .index .tarjeta .contenido a {
   margin: 10px 0;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
+}
+body .footer-bottom {
+  margin-top: -12px;
 }
 body #redes {
   font-family: "Gloock", serif;
@@ -178,7 +181,7 @@ body .galeria .titulo h3 {
 }
 body .contenedor-galeria {
   background-color: black;
-  padding: 130px 50px 50px 50px;
+  padding: 130px 50px 100px 50px;
 }
 body .contenedor-galeria .gallery {
   margin: auto;
@@ -288,8 +291,8 @@ body .footer-container {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  background: rgb(0, 0, 0);
-  background: black;
+  background: #1d1d1d;
+  background: #1d1d1d;
   color: rgb(245, 245, 220);
 }
 body .formulario {
@@ -519,13 +522,13 @@ body .redes-cont {
     clip-path: none;
   }
   body .contacto h7 {
-    margin-left: -1000px;
+    margin-left: 20px;
+    font-size: 3.5rem;
   }
   body .formulario {
     width: 100%;
     display: flex;
     margin-top: 80px;
-    margin-left: 50px;
   }
   body .formulario .row {
     width: 350px;
@@ -654,6 +657,18 @@ body .redes-cont {
     margin-left: 50px;
   }
 }
+body .formulario {
+  padding-bottom: 50px;
+}
+@media (min-width: 600px) and (max-width: 767px) {
+  body h7 {
+    font-size: 1rem;
+    padding-left: 50px;
+  }
+  body .formulario {
+    padding-left: 50px;
+  }
+}
 @media (min-width: 480px) and (max-width: 767px) {
   body .formulario {
     margin-left: 130px;
@@ -666,12 +681,9 @@ body .redes-cont {
     width: 200px;
   }
 }
-@media screen and (min-width: 310px) and (max-width: 500px) {
+@media screen and (min-width: 310px) and (max-width: 550px) {
   body .index nav .logo {
     font-size: 25px;
-  }
-  body .index .tarjeta {
-    display: none;
   }
   body .main-media-index {
     margin-left: -150px;
@@ -679,18 +691,28 @@ body .redes-cont {
   body .header-noti h2 {
     display: none;
   }
-  body .formulario {
-    margin-left: -5px;
-  }
   body .formulario a .btn {
     margin-left: 120px;
   }
   body .formulario .formu {
     width: 150px;
   }
+  body .contacto h7 {
+    display: none;
+  }
   body .formulario {
     width: 200px;
-    margin-left: 30px;
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 420px) and (max-width: 550px) {
+  body .formulario {
+    padding-left: 30px;
+  }
+}
+@media screen and (min-width: 1040px) and (max-width: 1350px) {
+  body h2 {
+    padding-left: 80px;
   }
 }
 
