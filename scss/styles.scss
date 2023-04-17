@@ -16,8 +16,10 @@ font-family: 'Raleway', sans-serif;
 @import "partials/variables";
 
 nav{
-    @include sizes(100%, 80px);
+    @include sizes(100%, 85px);
     background:$fondo;
+    
+    
     #check-menu {
         display: none;
         
@@ -29,7 +31,7 @@ nav{
     
         .logo{
             img{
-                padding: 15px 0 0 50px;
+                padding: 18px 0 0 50px;
                 height: 50px;
                 width: auto;
             }
@@ -372,8 +374,8 @@ nav{
    margin-top: -17px;
     @include flex-center();
     flex-direction: column;
-    background: #1d1d1d;
-    background: #1d1d1d; 
+    background: #000000bd;
+    background: #010210; 
     color: rgb(245, 245, 220);
     
 
@@ -382,6 +384,7 @@ nav{
 .formulario{
     margin: -160px 0px 0 35rem;
    height: auto;
+   
    
 
    form{
@@ -428,7 +431,8 @@ nav{
     padding: 100px;
     background: url(../assets/fondo-noti.jpeg);
     @include imgposition();
-    padding-top: 250px;
+    padding-top: 230px;
+    
     
     .card{
         border: 1px solid black;

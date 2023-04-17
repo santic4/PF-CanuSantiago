@@ -417,3 +417,18 @@
         padding-left: 80px ;
     }
 }
+
+@media screen and (min-width:310px) and (max-width:375px){
+   .formulario{
+    width: 300px;
+    .media-f{
+        margin-left: -16px;
+        width: 300px;
+       }
+       .form-floating{
+        width: 300px;
+        margin-right: 0px;
+       }
+   }
+}
+
