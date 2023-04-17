@@ -2,32 +2,44 @@
 
 @media screen and (min-width:310px) and (max-width:900px) {
    nav{
+    
         ul {
             display: none ;
+            pointer-events: 0;
+            
         }
             .menu{
                 display: block;
+                
                 font-size: 3rem;
                 color: #ffffff;
                 cursor: pointer;
                 float: right;
                 padding: 12px 10px 0 5px; 
+                z-index: 100;
                 
             }
         #check-menu:checked ~ul {
+            pointer-events: auto;
             display: block;
-            background: rgb(23, 116, 133);
-            margin-top: 0px;
+            position: fixed;
+            background: #282828;
+            color: white;
+            margin-top: 15px;
             margin-right: -10px;
-            width: 150px;
+            width: 100%;
             padding-bottom: 10px;
+            z-index: 100;
+            
+            
             
             
             li{
                 display: block;
-                align-items: flex-start;
+                @include flex-center;
                 height: 60px;
                 margin-left: -20px;
+                
             }
             .btn-contacto{
                 background-color: #ffa20000 ;
@@ -35,6 +47,7 @@
             
         }
     }
+    
     
 
    .main-media-index{
@@ -95,13 +108,15 @@
         flex-direction: column;
         align-items: center;
         padding: 50px;
+        padding-top: 100px;
+       
         
       }
 
     /*CONTACTO @MEDIA*/
   .contacto{
             width: 100%;
-            height: auto;
+            height: 50vh;
             font-size: small;
             clip-path: none;
 
@@ -202,11 +217,12 @@
 
         .contacto{
             width: 100%;
-            height: auto;
+            height: 50vh;
             font-size: small;
+            clip-path: none ;
 
             h7{
-                margin-left: 70px;
+                margin-left: 150px;
                 }
         }
 
@@ -281,7 +297,9 @@
     h2{
         margin-left: 250px;
     }
+    
   }
+
  
 }
 
@@ -340,7 +358,8 @@
             display: none;
         }
       }
-     
+
+      
       .formulario{
         margin-left: -5px;
         
@@ -355,4 +374,10 @@
         }
         
     }
+    
+        .formulario{
+            width: 200px;
+            margin-left: 30px;
+        }
+    
 }
