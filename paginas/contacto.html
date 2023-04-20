@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Mystery+Quest&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Mystery+Quest&family=Yatra+One&display=swap" rel="stylesheet">
 
     <!--Script-->
 
@@ -36,20 +37,21 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
 
-   
     <title>CONTACTO</title>
+
 </head>
+
 <body >
 
     <header class="contacto">
 
       <nav>
-        <input type="checkbox" id="check-menu">
+        <input  type="checkbox" id="check-menu">
         
         <label for="check-menu" class="menu" ><i class="fa-solid fa-bars" style="color: #ffffff;"></i></label>
 
         <div class="logo" ><img src="../assets/diezpinoslogorender.png" alt="LOGODIEZPINOS"></div>*/
-        <ul>
+        <ul class="nav-contacto">
           <li >
               <a href="../index.html">INICIO</a>
           </li>
@@ -66,6 +68,7 @@
               <a href="./contacto.html">CONTACTO</a>
           </li>
       </ul>
+
     </nav>
 
         <h7>
@@ -74,63 +77,76 @@
     
     </header>
     
-    <main class="formulario">
-
-      <form action="input" class="formu">
-
-        
-        <div class="row g-3 nomb media-f">
-          <div class="col 0">
-            <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
-          </div>
-          <div class="col 1">
-            <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
-          </div>
+  <main class="formulario-responsive">
+    
+    <div class="container">
+    <form>
+      <div class="row">
+        <div class="col-25">
+          <label for="nombre">Nombre:</label>
         </div>
-
-
-        <div class="form-floating mb-3 2 media-f">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-          <label class="letra-email" for="floatingInput">Email</label>
+        <div class="col-75">
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre...">
         </div>
-
-        <div class="form-floating 3 media-f">
-          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-          <label class="letra-comentarios" for="floatingTextarea2">Comentarios</label>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email:</label>
         </div>
+        <div class="col-75">
+          <input type="text" id="email" name="email" placeholder="Tu email...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="asunto">Asunto:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="asunto" name="asunto" placeholder="El asunto de tu mensaje...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="mensaje">Mensaje:</label>
+        </div>
+        <div class="col-75">
+          <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
 
-        <a href=""><button type="button" class="btn btn-danger 4">ENVIAR</button></a>
+    <div class="redes-container redes-cont">
 
-     
+      <ul class="list">
 
-      </form>
+          <li><a href="https://www.youtube.com/@pinosdiezpinos/" class="youtube" target="_blank"><i class="fa-brands fa-youtube"></i></i></a></li>
+          <li><a href="https://www.instagram.com/diez_pinos/" class="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></class=></i></a></li>
+          <li><a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></i></a></li>
+          <li><a href="#" class="gmail"><i class="fa-regular fa-envelope"></i></fa-brands></a></li>
+          <li><a href="#" class="spotify"><i class="fa-brands fa-spotify"></i></fa-brands></a></li>
 
-      <div class="redes-container redes-cont">
-        <ul class="list">
+      </ul>
 
-            <li><a href="https://www.youtube.com/@pinosdiezpino" class="youtube"><i class="fa-brands fa-youtube"></i></i></a></li>
-            <li><a href="https://www.instagram.com/diez_pinos/" class="instagram"><i class="fa-brands fa-instagram"></i></class=></i></a></li>
-            <li><a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></i></a></li>
-            <li><a href="#" class="gmail"><i class="fa-regular fa-envelope"></i></fa-brands></a></li>
-            <li><a href="#" class="spotify"><i class="fa-brands fa-spotify"></i></fa-brands></a></li>
-
-        </ul>
-    </div>
-
+  </div>
+  </div>
+  
     </main>
 
     <footer class="footer-container ">
       
-
       <div >
           
           <p>
-              Copyright &copy;2023 DIEZ PINOS designed by <span>@santi_C4</span>
+            Copyright &copy;2023 DIEZ PINOS designed by <span><a href="https://www.instagram.com/santi_C4/" target="_blank">@santi_C4</a></span>
           </p>
 
       </div>
       
   </footer>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 

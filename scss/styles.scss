@@ -1,41 +1,36 @@
-
 body{
     margin: 0px;
     padding: 0px;
     text-decoration: none;
     list-style: none;
     background: #0f1336; 
-background: -webkit-linear-gradient(to right, #1F1C18, #0f1336);
-background: linear-gradient(to right, #1F1C18, #0f1336); 
-
-background: linear-gradient(to bottom, #131313, #0f1336);
+    background: -webkit-linear-gradient(to right, #1f1c18, #0f1336);
+    background: linear-gradient(to right, #1F1C18, #0f1336); 
+    background: linear-gradient(to bottom, #07093b, #0f1336);
     font-family: 'Gloock', serif;
+    font-family: 'Raleway', sans-serif;
+    @import "partials/mixins";
+    @import "partials/variables";
     
-font-family: 'Raleway', sans-serif;
-@import "partials/mixins";
-@import "partials/variables";
-
 nav{
     @include sizes(100%, 85px);
     background:$fondo;
     
-    
     #check-menu {
+
         display: none;
-        
         }
         
-            .menu{
-        display: none;
+        .menu{
+         display: none;
     }
     
         .logo{
             img{
                 padding: 18px 0 0 50px;
-                height: 50px;
-                width: auto;
-            }
-                 
+                @include sizes (auto, 50px);
+                cursor: pointer;
+            }      
         }
 
     ul{
@@ -48,7 +43,6 @@ nav{
             margin: 0 8px;
             line-height: 80px;
             
-            
             a{
                 color: whitesmoke;
                 font-size: 1.2rem;
@@ -57,39 +51,34 @@ nav{
                 padding: 7px 10px;
                 border-radius: 3px;
                 text-decoration: none;
-                
             }
         }
         .btn-contacto{
             background-color: #ffa2005b;
-            
         }
     }
-    
-
 }
 
-
-
 /*HEADER INDEX*/
+
 .index{
     @include sizes(100%, 48rem);
     position: relative;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.94),rgba(255, 255, 255, 0)) ,url(../assets/fondo1.jpg) ;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.94),rgba(255, 255, 255, 0)) ,url(../assets/fondo-index.jpg) ;
     @include imgposition();
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
     
-   
     .tarjeta{
-        width: 200px;
-        height: 400px;
+        @include sizes(200px, 400px);
         margin: 70px 0 0 100px;
         border-radius: 5px;
         background: url(../assets/tarjeta.jpeg);
-        background-size: cover;
-        box-shadow: 3px 5px 5px rgba(3, 26, 51, 0.9);
+        @include imgposition;
+        box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.9);
         opacity: 0.9;
         overflow: hidden;
+        filter: drop-shadow(0 2px 5px #000000);
+
         &:hover{
             transform: scale(1.1);
             transition: all .5s ease-in-out;
@@ -98,24 +87,22 @@ nav{
                 opacity: 1;
             }
         }
+
         .contenido{
-            width: 100%;
-            height: 100%;
+            @include sizes(100%, 100%);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             background: rgba(0, 0, 0, .4);
-            opacity: 0;
+            opacity: 1;
             transition: .5s;
             
                 a{
                     margin: 10px 0;
                     color: rgba(255, 255, 255, .8);
                     text-decoration: none;
-                    
                 }
-            
         }
     }
 }
@@ -125,7 +112,6 @@ nav{
 
 #redes{
     font-family: 'Gloock', serif;
-    /*background-color: #1770a3;*/
     color: #000000;
 
     .contenedor-index{
@@ -135,17 +121,21 @@ nav{
         margin-left: 100px;
 
         .foto img{
-            @include sizes (auto, 480px);
+            @include sizes (auto, 420px);
             padding: 60px 0 100px 60px;
             margin-left: 150px;
         }
 
         .texto {
+            margin-top: -20px;
+            p{
+                margin-top: -40px;
+            }
+
             h3{
                 margin-left: 50px;
             }
         }
-        
     }
 
     h3{
@@ -155,7 +145,6 @@ nav{
         border-radius: 5px;
         padding: 5px;
         background: linear-gradient(to bottom ,#ffa2005b,rgb(81, 24, 77)) ;
-       
 
         #encontranos{
             text-decoration: none;
@@ -163,7 +152,6 @@ nav{
             margin-left: 10px;
             font-weight: 400;
         }
-        
     }
 
     p{
@@ -171,9 +159,11 @@ nav{
         line-height: 50px;
         font-size: 40px;
         color: rgb(255, 255, 255);
+
         .span-ig{
             color: $verde;
         }
+        
         .span-yb{
             color: $rojo;
         }
@@ -181,153 +171,189 @@ nav{
 
     .texto{
         width: 50%;
-        
     }
-
 }
 
 /*GALERIA*/
-.arr{
+
+.barranav{
             
     ul{
-        padding-top: 5px;
-     }
+     padding-top: 5px;
+    }
+
     .logo{
-        
+
         img{
             padding: 15px 0 0 50px;
-            height: 65px;
-            width: auto;
+            @include sizes(auto, 65px);
         }
-             
     }
-
 }
+
     .galeria{
-    background-color: rgb(0, 0, 0);
-    height: 10rem;
-    
+        background-image: url(../assets/header-noti.jpg);
+        @include imgposition;
+        clip-path: polygon(0 0, 100% 0, 100% 55%, 50% 100%, 50% 100%, 0 55%);
+        border-top: 1px solid rgb(0, 0, 0);
+        height: 240px;
 
-    .titulo {
-        width: 100%;
-        @include flex-center();
-        background-color: rgba(0, 0, 0, 0);
-        height: 10rem;
-        
-        h3{
-            width: 700px;
-            font-size: $inter;
-            word-spacing: 0.25em;;
-            color: rgb(255, 255, 255);
-         
-        }
-
-    }
-    
-}
-
-
-.contenedor-galeria{
-    background-color: black;
-    padding: 130px 50px 100px 50px;
-
-    .gallery {
-        margin: auto;
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        column-gap: .5rem;
-        row-gap: .5rem;
-        gap: 20px;
-        grid-auto-flow: dense;
-        margin-top: -70px;
-    }
-
-    .imagen{
-        width: 100%;
-        box-shadow: 0 0 10px #c6c4c25b;
-        filter: drop-shadow(0 2px 5px #d5cec25b);
-
-        img{
-            width: 100%;
-            border-radius: 5px;
-            transition: transform 0.3s ease-in-out;
-            border: solid 1px #dad7d05b;
-
+        .titulo {
+            @include flex-center();
+            background-color: rgba(0, 0, 0, 0);
+            @include sizes(100%, 10rem);
             
-         }
-         img:hover{
-            transform: scale(1.1);
-        }
-    }
-}
-
-    .header-noti{
-        
-        nav{
-            
-            ul{
-                padding-top: 5px;
-             }
-            .logo{
-                
-                img{
-                    padding: 15px 0 0 50px;
-                    height: 65px;
-                    width: auto;
-                }
-                     
+            h3{
+                width: 700px;
+                font-size: $inter;
+                letter-spacing: 0.3em;
+                word-spacing: 0.5em;
+                color: rgb(255, 255, 255);
+                margin-top: 15px;
+                font-family: 'Yatra One', cursive;
+                filter: drop-shadow(0 2px 5px #08354c);
             }
-
+        }
+    }
+    
+    .contenedor-galeria{
+        background-color: rgba(0, 0, 0, 0);
+        padding: 130px 50px 100px 50px;
+    
+        .gallery {
+            @include sizes(auto, auto);
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            column-gap: .5rem;
+            row-gap: .5rem;
+            gap: 50px;
+            grid-auto-flow: dense;
+            margin-top: -70px;
         }
     
-        @include sizes (100%, 0rem);
-        @include imgposition();
-        
-       h2{
-        margin-left: 550px;
-        margin-top: 80px;
-        text-transform: uppercase;
-        color: white;
-        font-size: $inter;
-        
-       
-       }
-        
+        .imagen{
+            width: 100%;
+            box-shadow: 0 0 10px #0b516726;
+            filter: drop-shadow(0 2px 5px #0947693a);
+            cursor: pointer;
+            
+            img{
+                width: 100%;
+                border-radius: 5px;
+                transition: transform 0.3s ease-in-out;
+                border: solid 1px #0b385d29;  
+             }
+
+             img:hover{
+                transform: scale(1.1);
+            }
+        }
     }
-
-
+  
 .header-info{
-    background-color: black;
     @include imgposition();
-    height: 20rem;
+    height: 85px;
+
     nav{
             
         ul{
             padding-top: 5px;
-         }
+        }
+
         .logo{
             
             img{
                 padding: 15px 0 0 50px;
-                height: 65px;
-                width: auto;
+                @include sizes(auto, 65px);
             }
-                 
         }
-
     }
+
     h4{
         width: 700px;
         font-size: $inter;
-            word-spacing: 0.25em;;
-            color: rgb(255, 255, 255);
-            margin-left: 630px;
-            margin-top: 100px;
+        word-spacing: 0.25em;;
+        color: rgb(255, 255, 255);
+        margin-left: 630px;
+        margin-top: 100px;
     }
-
 }
 
+.contenedor-info{
+    @include sizes(100%, auto);
+    
+    .hijo1-info{
+        transform: translatey(-14px);
+        @include sizes(100%, 200px);
+        @include flex-center;
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 80% 85%, 70% 100%, 55% 85%, 45% 85%, 30% 100%, 20% 85%, 10% 100%);
+        background-image: url(../assets/olvidar.jpg);
+        border-radius: 50px;
+
+        h1{
+        text-transform: uppercase;
+        width: auto;
+        letter-spacing: 0.3em;
+        word-spacing: 0.5em;
+        color: rgb(255, 255, 255);
+        font-size: $inter;
+        font-family: 'Yatra One', cursive;
+        margin-top: 10px;
+        filter: drop-shadow(0 2px 5px #0a7b8d9e);
+        }
+
+    }
+
+    .prueba{
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 200px;
+            margin-right: 200px;
+
+            .column {
+                flex: 30%;
+                padding: 80px 10px;
+
+                .responsive-image {
+                height: 40vh;
+                @include imgposition;
+                border-radius: 10px;
+                box-shadow: 10px 10px 10px #000000c5;
+                filter: drop-shadow(5px 5px 110px #121416a1);
+                cursor: pointer;
+                }
+
+                  .cartel {
+                    background-color: #ffa2005b;
+                    padding: 20px;
+                    text-align: center;
+                    margin-right: 100px;
+                    border-radius:2px ;
+
+                    li{
+                        padding: 10px;
+                        font-size: $small;
+                        color: rgb(0, 0, 0);
+                        letter-spacing: 2px;
+                        
+                        a{
+                            color: rgb(16, 4, 55);
+                        }
+
+                        span{
+                        text-decoration: underline;
+                        }
+                    }
+                  }
+              }
+          }
+    }   
+}
 
 .contacto{
     @include sizes (100%, 40rem);
@@ -335,150 +361,204 @@ nav{
     @include imgposition();
     clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 23%, 83% 54%, 13% 63%, 0 100%, 0 0);
     position: relative;
+    
     nav{
             
         ul{
             padding-top: 5px;
-         }
+        }
+
         .logo{
             
             img{
                 padding: 15px 0 0 50px;
-                height: 65px;
-                width: auto;
+                @include sizes(auto, 65px);
             }
-                 
         }
-
     }
-    
 
     h7{
-        display: flex;
+        @include flex-center;
         font-size: $inter;
-        margin-left: 38rem;
         margin-top:100px;
         color: #ffffff;
-        letter-spacing: 0.5em;
-      word-spacing: 0.5em;
-      
+        letter-spacing: 0.3em;
+        word-spacing: 0.5em;
+        font-family: 'Yatra One', cursive;
+        filter: drop-shadow(0 2px 5px #0a7b8d9e);
     }
 }
 
-
 .footer-container{
     font-family: none;
-    width: 100%;
-    height: auto;
+    @include sizes(100%, auto);
    padding-top: 20px;
    margin-top: -17px;
     @include flex-center();
     flex-direction: column;
-    background: #000000bd;
-    background: #010210; 
+    background: #000000;
+    background: #02041d; 
     color: rgb(245, 245, 220);
-    
-
 }
 
-.formulario{
-    margin: -160px 0px 0 35rem;
-   height: auto;
-   
-   
+.formulario-responsive{
+    margin-top: -100px;
 
-   form{
-    width: 600px;
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
 
-    .btn{
-        margin: 40px 0 0 250px;
-        background-color: #ffff00d0 ;
-        color: black;
-        border: 1px solid black;
-    }
-    
-
-    .formu{
-        width: 600px;
-
-        .form-floating{
-            padding-top: 100px;
-
-            .letra-email{
-                margin-top: 100px;
+        form{
+            
+            .row{
+                &:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                  }
             }
             
-            .letra-comentarios{
-                margin-top: 100px;
-            }
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+            margin: 10px 0;
+          }
+    
+          label {
+            padding: 12px 0 6px 0;
+            display: inline-block;
+            color: white;
+          }
+    
+          button[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            margin:50px 0;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+          }
+    
+          button[type=submit]:hover {
+            background-color: #45a049;
+          }
         }
-
-    }
-    .nomb{
-        padding-bottom: 18px;
-    }
+      }
 }
-}
-
 
 /*NOTICIAS*/
-.contenedor{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: -500px;
-    padding: 100px;
-    background: url(../assets/fondo-noti.jpeg);
-    @include imgposition();
-    padding-top: 230px;
+
+.fondo-noti{
+    background:  url(../assets/fondo-noti.jpeg) ;
+    @include imgposition;
+    margin-top: 85px;
     
-    
-    .card{
-        border: 1px solid black;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-        filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
-        .card-body{
-            margin-top: -50px;
-            .text-h{
-                font-size: 1.8rem;
-                padding-bottom: 40px;
-                text-transform:uppercase;
+    .clip{
+        background-image: url(../assets/black-vinyl-record-disc-flat-retro-concept-illustration-vector.webp);
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 80% 85%, 70% 100%, 55% 85%, 45% 85%, 30% 100%, 20% 85%, 10% 100%);
+        height: 200px;
+        border-radius: 50px;
+        background-color: rgba(0, 0, 0, 0.665);
+    }
+
+    .contenedor{
+        @include sizes(100%, auto);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 170px;
+        padding-bottom: 100px;
+        @include imgposition();
+        transform: translatey(-17px);
+        gap: 5em;
+        
+        .card{
+            border: 1px solid black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+
+            .card-body{
+                margin-top: -50px;
+
+                .text-h{
+                    font-size: 1.8rem;
+                    padding-bottom: 40px;
+                    text-transform:uppercase;
+                }
+              
+                .card-text{
+                    font-size: 3rem;
+                    text-transform:uppercase;
+                }
+
+                h6{
+                    @include sizes(auto, auto);
+                    font-size: 2rem;
+                    transform: translateY(-850%);
+                    margin-left: 100px;
+                    color: rgb(255, 255, 255);
+                    text-transform: uppercase;
+                    margin-top: 10px;
+                 }
+                 
+                 button{
+                    background-color: #00B2FF;
+                    padding: 8px;
+                    margin-left: 30px;
+                    border-radius: 5px;
+                    color: white;
+                    }
             }
-          
-            .card-text{
-                font-size: 3rem;
-                text-transform:uppercase;
-                
-            }
-            h6{
-                height: auto;
-                width: auto;
-                font-size: 2rem;
-                transform: translateY(-850%);
-                margin-left: 100px;
-                color: rgb(255, 255, 255);
-                text-transform: uppercase;
-                margin-top: 15px;
-                
-             }
-             
-             
-             button{
-                background-color: #00B2FF;
-                padding: 8px;
-                margin-left: 30px;
-                border-radius: 5px;
-                color: white;
-                  }
         }
     }
 }
 
+.header-noti{ 
+
+    nav{
+        ul{
+            padding-top: 5px;
+        }
+
+        .logo{
+
+            img{
+                padding: 15px 0 0 50px;
+                @include sizes(auto, 65px);
+            }       
+        }
+    }
+    
+    @include sizes (100%, 0);
+    @include imgposition(); 
+}
+
+.h2{
+    width: 100%;
+    @include flex-center;
+
+    h2{    
+        text-transform: uppercase;
+        width: auto;
+        color: white;
+        font-size: $inter;
+        letter-spacing: 0.3em;
+        word-spacing: 0.5em;
+        font-family: 'Yatra One', cursive;
+        margin-top: 50px;
+        filter: drop-shadow(0 2px 5px #0a7b8d9e);
+       }
+}
 
 /*FOOTER REDES*/
 
 .redes-container{
+    margin: 40px 0;
 
     ul {
         li {
@@ -486,8 +566,7 @@ nav{
          margin: 0 5px;
          @include sizes (50px, 50px);
          text-align: center;
-         padding: 70px 0px ;
-
+         
          a{
             display: block;
             padding: 0 10px;
@@ -555,18 +634,15 @@ nav{
             }
         }
  }
-
 } 
 
 .redes-cont{
     margin-left: -500px;
     margin-top: 60px;
     padding-bottom: 50px
-    
 }
 
 @import "queries";
-
 
 }
 

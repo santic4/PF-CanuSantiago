@@ -2,23 +2,21 @@
 
 @media screen and (min-width:310px) and (max-width:900px) {
    nav{
-    
         ul {
             display: none ;
             pointer-events: 0;
-            
         }
+
             .menu{
                 display: block;
-                
                 font-size: 3rem;
                 color: #ffffff;
                 cursor: pointer;
                 float: right;
                 padding: 12px 10px 0 5px; 
                 z-index: 100;
-                
             }
+
         #check-menu:checked ~ul {
             pointer-events: auto;
             display: block;
@@ -26,58 +24,67 @@
             background: #282828;
             color: white;
             margin-top: 15px;
-            margin-right: -10px;
             width: 100%;
             padding-bottom: 10px;
             z-index: 100;
-            
-            
-            
             
             li{
                 display: block;
                 @include flex-center;
                 height: 60px;
-                margin-left: -20px;
-                
+                margin-left: -30px;
             }
+
             .btn-contacto{
                 background-color: #ffa20000 ;
             }
-            
+        }
+
+        .nav-contacto{
+            transform: translatey(-15px);
+        }
+    
+        .nav-index{
+            transform: translatey(-4px);
+            li{
+                transform: translatex(-20px);
+            }
         }
     }
     
-    
-
    .main-media-index{
+
     #redes{
+
         h3{
             font-size: 1rem;
             width: 2px;
-            
 
             #encontranos{
                 font-size: x-large;
                 margin-left: 12px;
                }
-               
         }
+
         .contenedor-index{
             margin-left: -20px;
-            .foto{
-                display: none;
-               }
-               
+            
+             .texto{
+
+                .redes-container{
+                    margin: 50px 0;
+                    ul{
+                        li{
+                            margin: 10px;
+                        }
+                    }
+                }
+             }
         }
     } 
    }
 
       /*GALERIA @MEDIA*/
-
-      .galeria{
-        display: none;
-      }
 
       .contenedor-galeria {
         .gallery{
@@ -89,78 +96,59 @@
             margin-top: -70px;
             grid-template-columns: repeat(1,1fr);
         }
-
       } 
-
-      
 
       /*NOTICIAS*/
 
-      .header-noti{
-        h2{
-            display: none;
-        }
-      }
-
-      .contenedor{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 50px;
-        padding-top: 100px;
-       
+      .fondo-noti{
         
-      }
+        .contenedor{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+            padding-top: 100px;
+          }
+
+        .clip{
+            clip-path: none;
+            background: transparent;
+        }
+    }
+      
+   .contenedor-info{
+    
+    .hijo1-info{
+        margin-top: 15px;
+        h1{
+            font-size: $small;
+        }
+    }
+   }
 
     /*CONTACTO @MEDIA*/
   .contacto{
             width: 100%;
-            height: 50vh;
+            height: auto;
             font-size: small;
             clip-path: none;
 
             h7{
-                margin-left: 20px;
-                font-size: $inter;
-                }
-        }
-
-        .formulario{
-            width: 100%;
-            display: flex;
-        margin-top: 80px;
-        
-
-        .row{
-            width: 350px;
-            margin-left: 1px;
-            }
-
-        .form-floating{
-            justify-items: center;
-            justify-content: center;
-            width: 330px;
-            margin-left: 10px;
-            }
-
-            .btn{
-                margin-left: 150px;
-            }
-
-            .redes-cont{
-                display: none;
+             margin-left: 20px;
+             font-size: $inter;
             }
         }
        } 
 
-
 @media (min-width:768px) and (max-width:1000px) {
+
     /*NAV @MEDIA*/
+
     .nav{
+
         ul {
             display: none ;
-         
         }
 
         label{
@@ -193,6 +181,7 @@
     } 
 
     /*GALERIA QUERIES*/
+
     .contenedor-galeria {
         .gallery{
             display: grid;
@@ -203,112 +192,62 @@
             margin-top: -70px;
             grid-template-columns: repeat(2,1fr);
         }
-
       } 
-
-      .header-noti{
-        h2{
-            width: 570px;
-            margin-left: 200px;
-        }
-      }
 
     /*CONTACTO @MEDIA*/
     
-
         .contacto{
-            width: 100%;
-            height: 50vh;
+            @include sizes(100%, 41vh);
             font-size: small;
             clip-path: none ;
-
-            h7{
-                margin-left: 150px;
-                }
         }
 
-        .formulario{
-            
-            width: 500px;
-            display: flex;
-        margin-top: 80px;
-        margin-left: 150px;
-        
-               form{
-                
-                .form-floating{
-                    justify-items: center;
-                    justify-content: center;
-                    width: 400px;
-                    margin-left: 60px;
-                    }
-                    .row{
-                        width: 420px;
-                        margin-left: 50px;
-                        }
-                        .btn{
-                            margin-left: 220px;
-                        } 
-
-               }
+        .formulario-responsive{
+            margin-top: 100px;
         }
-                .redes-cont{
-                    display: none;
-                }
-        
+
+        .redes-cont{
+             display: none;
+            }
         } 
-       
-
 
 @media (max-width:967px){
+
     .foto {
         display: none;
     }
+
     .main-media-index{
         #redes{
             .contenedor-index{
-                width: 100%;
+                
                 margin-left: -12px;
                 .texto{
-                    margin-left: 150px;
+                    margin-left: 100px;
                 }
             }
         }
     }
-    .formulario{
-        padding-bottom: 60px;
-    }
 }
 
 @media screen and (min-width:1000px) and (max-width:1330px) {
-   .contacto{
-    h7{
-        margin-left: 350px;
-    }
-   }
-    .formu{
-    margin-left: -300px;
-    
-   }
+
     .redes-cont{
     width: 100%;
-
    }
+
    .header-noti{
     h2{
         margin-left: 250px;
     }
-    
   }
-
- 
 }
 
 @media (min-width:900px){
     .main-media-index{
         #redes{
             .contenedor-index{
-                width: 100%;
+                
                 margin-left: -12px;
                 .texto{
                     margin-left: 50px;
@@ -318,98 +257,47 @@
     }
 }
 
-.formulario{
-    padding-bottom: 50px;
-}
-
 @media (min-width: 600px) and (max-width:767px){
     h7{
         font-size: 1rem;
-        padding-left: 50px;
-    }
-    
-    .formulario{
-        padding-left: 50px;
+        justify-content: center;
     }
 
-}
+    .contacto{
+        height: 40vh;
+    }
 
-@media (min-width: 480px) and (max-width:767px){
-   
-    .formulario{
-        margin-left: 130px;
-        width: 400px;
-        
-        a{
-            .btn{
-                margin-left: 120px;
-            }
-
-        }
-        .formu{
-            width: 200px;
-        }
-        
+    .formulario-responsive{
+        margin-top: 100px;
     }
 }
 
 @media screen and (min-width:310px) and (max-width:550px){
   .index{
     nav{
+
         .logo{
             font-size: 25px;
-            
            }
-    
        }
-    
   } 
-
 
    .main-media-index{
     margin-left: -150px;
    }
-    .header-noti{
-        h2{
-            display: none;
-        }
-      }
-
     
-      .formulario{
-        
-        
-        a{
-            .btn{
-                margin-left: 120px;
+    .fondo-noti{
+        .clip{
+            background: transparent;
+            h2{
+                font-size: 40px;
             }
-
         }
-        .formu{
-            width: 150px;
-        }
-        
-    }
-   .contacto{
-
-    h7{
-        display: none;
     }
 
+   .formulario-responsive{
+    margin-top: 100px;
    }
-
-   
-   .formulario{
-    width: 200px;
-    margin-left: 20px;
-}
-
-}
-
-@media screen and (min-width:420px) and (max-width:550px){
-  .formulario{
-    padding-left: 30px;
-  }
 }
 
 @media screen and (min-width:1040px) and (max-width:1350px){
@@ -418,17 +306,69 @@
     }
 }
 
-@media screen and (min-width:310px) and (max-width:375px){
-   .formulario{
-    width: 300px;
-    .media-f{
-        margin-left: -16px;
-        width: 300px;
-       }
-       .form-floating{
-        width: 300px;
-        margin-right: 0px;
-       }
-   }
-}
+@media screen and (max-width: 600px) {
+    .contacto{
+        
+        height: 30vh;
+        h7{
+            font-size: 30px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+    }
+    
+    .formulario-responsive{
+        margin-top: 100px;
 
+        input[type=text], select, textarea {
+            width: 100%;
+            margin-top: 0;
+          }
+          button[type=submit] {
+            width: 100%;
+            margin-top: 10px;
+          }
+    }
+  }
+
+  @media screen and (min-width:310px) and (max-width:1130px){
+    .contenedor-info{
+        
+        .prueba{
+            .row{
+                    .column{
+                        min-width: 310px;
+                    }
+            }
+           }
+    }
+  }
+
+  @media screen and (min-width:310px) and (max-width:350px){
+    .contenedor-info{
+
+        .prueba{
+            .row{
+                justify-content: center;
+                align-items: center;
+                justify-items: center;
+                max-width: 310px;
+                    .column{
+                       max-width: 310px;
+                        margin-left: -70px;
+                        padding-left: 0px;
+
+                        img{
+                            margin-left: 23px;
+                        }
+                        
+                        .cartel{
+                            margin-right:auto;
+                        }
+                    }
+            }
+           }
+    }
+
+  }
+  
